@@ -1,0 +1,6 @@
+metric,value
+CVA,630.3331276341407
+DVA,1492.8719101178963
+Net XVA adjustment (-CVA + DVA),862.5387824837555
+Risk-free value,0.0
+CVA/DVA-adjusted value,862.5387824837555

@@ -1,0 +1,6 @@
+maturity_years,counterparty_base_bps,counterparty_stress_bps,self_base_bps,self_stress_bps
+1,50,120,40,100
+3,80,180,65,150
+5,120,250,100,220
+7,150,320,130,280
+10,180,400,160,350

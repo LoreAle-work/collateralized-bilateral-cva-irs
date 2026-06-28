@@ -1,0 +1,2 @@
+model,calibration_type,baseline_window,a,sigma,half_life_years,note
+Hull-White one-factor,historical_ar1_short_rate,Last 10Y,0.003964020822311021,0.004008578180959185,174.8596214880226,theta(t) is fitted to the latest ECB initial zero curve; the Vasicek long-run mean b is not used in Hull-White.

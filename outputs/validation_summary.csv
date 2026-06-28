@@ -1,0 +1,14 @@
+check,passed
+Par swap initial value close to zero,True
+Initial swap value identical across paths,True
+Perfect collateral eliminates positive exposure,True
+Perfect collateral eliminates negative exposure,True
+Counterparty survival starts at one,True
+Counterparty survival decreases by maturity,True
+FTD CVA below unilateral CVA,True
+FTD DVA below unilateral DVA,True
+Counterparty stress increases CVA,True
+Self stress increases DVA,True
+Collateral stress increases collateralized EE,True
+Collateral stress increases collateralized ENE,True
+Positive WWR correlation increases CVA vs zero correlation,True

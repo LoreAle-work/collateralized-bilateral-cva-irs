@@ -1,0 +1,17 @@
+category,metric,value
+Swap,Risk-free initial value,0.0
+Exposure,Average uncollateralized EE,19500.050482417275
+Exposure,Average uncollateralized ENE,56792.34811131096
+Exposure,Peak uncollateralized PFE 99%,267424.1181878823
+Collateral,Average collateralized EE,16603.194191844716
+Collateral,Average collateralized ENE,45832.65221777494
+Collateral,Peak collateralized PFE 99%,231106.02984285375
+XVA,Base first-to-default CVA,630.3331276341407
+XVA,Base first-to-default DVA,1492.8719101178963
+XVA,Base net XVA adjustment,862.5387824837555
+XVA,Base adjusted value,862.5387824837555
+Stress,Counterparty stress CVA,1348.2269574560476
+Stress,Self stress DVA,3254.1249662767646
+Stress,Joint credit + collateral stress adjusted value,2263.9397776721717
+WWR,WWR CVA at rho = 0.50,635.3269423832025
+WWR,Pure WWR impact at rho = 0.50,2.5399048234013435
