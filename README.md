@@ -189,9 +189,7 @@ The Hull-White model extends Vasicek by replacing the constant long-run mean wit
 
 Under the one-factor Hull-White model, the drift term is constructed from the initial forward curve:
 
-$$
-\theta(t)
-=
+$$\theta(t)=
 \frac{\partial f(0,t)}{\partial t}
 +
 a f(0,t)
@@ -233,9 +231,7 @@ The Last 5Y window is selected because it provides a more plausible mean-reversi
 
 The short rate is simulated using an Euler scheme:
 
-$$
-r_{t+\Delta t}
-=
+$$r_{t+\Delta t}=
 r_t + [\theta(t)-ar_t]\Delta t + \sigma\sqrt{\Delta t}Z_t,
 $$
 
@@ -290,9 +286,7 @@ The fixed rate is set to the par swap rate so that the initial risk-free value i
 
 The par rate is:
 
-$$
-K_{\text{par}}
-=
+$$K_{\text{par}}=
 \frac{1-P(0,T_n)}{\sum_{i=1}^{n}\alpha_iP(0,T_i)}.
 $$
 
@@ -307,11 +301,7 @@ where:
 
 For a par payer swap:
 
-$$
-V_0
-=
-N\left[(1-P(0,T_n))-K_{\text{par}}\sum_i \alpha_iP(0,T_i)\right]
-=
+$$V_0=N\left[(1-P(0,T_n))-K_{\text{par}}\sum_i \alpha_iP(0,T_i)\right]=
 0.
 $$
 
@@ -718,9 +708,7 @@ where:
 
 Unilateral DVA is:
 
-$$
-DVA
-=
+$$DVA=
 (1-R_B)
 \sum_i
 DF(0,t_i)
@@ -743,8 +731,7 @@ In a bilateral setting, only the first default matters. If the bank defaults fir
 The first-to-default CVA formula is:
 
 $$
-CVA_{FTD}
-=
+CVA_{FTD}=
 (1-R_C)
 \sum_i
 DF(0,t_i)
@@ -756,8 +743,7 @@ $$
 The first-to-default DVA formula is:
 
 $$
-DVA_{FTD}
-=
+DVA_{FTD}=
 (1-R_B)
 \sum_i
 DF(0,t_i)
@@ -780,10 +766,7 @@ The survival term of the other party prevents double counting after first defaul
 The CVA/DVA-adjusted value is:
 
 $$
-V_{adjusted}
-=
-V_{risk\text{-}free}
--
+V_{adjusted}=V_{risk\text{-}free}-
 CVA_{FTD}
 +
 DVA_{FTD}.
@@ -970,13 +953,7 @@ $$
 
 The project models path-dependent counterparty hazard rates:
 
-$$
-\lambda_{C,m}(t_i)
-=
-\lambda_C(t_i)
-\exp\left(
-\eta\sqrt{\Delta t}Z^{\lambda}_{m,i}
--
+$$\lambda_{C,m}(t_i)=\lambda_C(t_i)\exp\left(\eta\sqrt{\Delta t}Z^{\lambda}_{m,i}-
 \frac{1}{2}\eta^2\Delta t
 \right),
 $$
@@ -992,9 +969,7 @@ where:
 
 The credit shock is correlated with the interest-rate shock:
 
-$$
-Z^{\lambda}_{m,i}
-=
+$$Z^{\lambda}_{m,i}=
 \rho Z^r_{m,i}
 +
 \sqrt{1-\rho^2}Z^{\perp}_{m,i}.
@@ -1013,16 +988,14 @@ where:
 Pathwise survival is:
 
 $$
-Q_{C,m}(0,t_i)
-=
+Q_{C,m}(0,t_i)=
 \exp\left(-\sum_{j=1}^{i}\lambda_{C,m}(t_j)\Delta t_j\right).
 $$
 
 Pathwise marginal default probability is:
 
 $$
-PD_{C,m}(t_{i-1},t_i)
-=
+PD_{C,m}(t_{i-1},t_i)=
 Q_{C,m}(0,t_{i-1})-Q_{C,m}(0,t_i).
 $$
 
@@ -1031,8 +1004,7 @@ $$
 The wrong-way CVA approximation is:
 
 $$
-CVA^{WWR}
-=
+CVA^{WWR}=
 (1-R_C)
 \sum_i
 DF(0,t_i)
@@ -1143,8 +1115,7 @@ $$
 For target quantile $q$, the EVT quantile is:
 
 $$
-x_q
-=
+x_q=
 u+
 \frac{\beta}{\xi}
 \left[
@@ -1155,8 +1126,7 @@ $$
 When $\xi \approx 0$, the exponential limit is used:
 
 $$
-x_q
-=
+x_q=
 u+
 \beta\log\left(\frac{p_u}{1-q}\right).
 $$
