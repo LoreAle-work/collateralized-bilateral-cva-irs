@@ -696,8 +696,7 @@ This effect is economically controversial but standard in bilateral valuation.
 Unilateral CVA is:
 
 $$
-CVA
-=
+CVA=
 (1-R_C)
 \sum_i
 DF(0,t_i)
